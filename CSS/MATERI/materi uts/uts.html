@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="uts.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="#">
+            <div class="group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" placeholder="Masukkan nama Anda..." required>
+            </div>
+            <div class="group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="contoh@mail.com" required>
+            </div>
+
+            <div class="group">
+                <label for="gender">Jenis Kelamin</label>
+                <select id="gender">
+                    <option value="pria">Laki-laki</option>
+                    <option value="wanita">Perempuan</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <label for="pesan">Pesan/Catatan</label>
+                <textarea id="pesan" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn-kirim">Kirim Data</button>
+        </form>
+        <a href="../Materi.html">Kembali</a>
+    </div>
+
+</body>
+</html>

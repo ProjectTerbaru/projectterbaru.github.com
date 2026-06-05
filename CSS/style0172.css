@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: silver;
+}
+
+
+.menu {
+    width: 100%;
+    background-color: rgb(44, 40, 157);
+    border-collapse: collapse;
+}
+
+.menu td {
+    padding: 10px 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.kotak {
+    width: 800px;
+    margin: 30px auto;
+    background-color: white;
+}
+
+.kotak td {
+    padding: 30px;
+}
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(247, 141, 28);
+    padding-bottom: 8px;
+}
+
+h2 {
+    color: rgb(255, 0, 0);
+}
+
+
+p {
+    color: black;
+    }
+
+
+.isi {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.isi td {
+    padding: 8px 12px;
+    border: 1px solid black;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(44, 40, 157);
+    margin-top: 1px;
+    border-collapse: collapse;
+}
+
+.footer td {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 13px;
+}
+body{
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    animation: backgroundMasuk 2s ease;
+}
+
+/* Animasi seluruh halaman */
+.container{
+    animation: muncul 2s ease;
+}
+
+/* Animasi gambar profil */
+img{
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: fotoMasuk 2s ease;
+}
+
+/* Tombol */
+a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #ACB6E5;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    animation: tombolMasuk 2.5s ease;
+}
+
+a:hover{
+    background: #8f8de9;
+    transform: scale(1.05);
+}
+
+/* Judul */
+h1,h2{
+    animation: turun 1.5s ease;
+}
+
+/* Paragraf biodata */
+p{
+    font-size: 20px;
+    color: #222;
+    animation: kiri 2s ease;
+}
+
+/* KEYFRAMES */
+
+@keyframes muncul{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fotoMasuk{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tombolMasuk{
+    from{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes turun{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes kiri{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes backgroundMasuk{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
